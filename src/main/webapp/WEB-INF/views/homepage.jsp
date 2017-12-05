@@ -13,8 +13,18 @@
 <body>
 
 Welcome to the virtual deanery!!!
+<br><br>
 
 Please log in as Student or Teacher to continue:
+<br><br>
+
+<form action="loggedin" method="post">
+
+    <input type="text" name="login" placeholder="What's your login?"/><br>
+    <input type="password" name="password" placeholder="What's your password?"/><br>
+    <input type="submit" />
+    <br><br>
+    <p><font color="red">${errormsg}</font></p>
 
 <%--LOGIN FORM--%>
 

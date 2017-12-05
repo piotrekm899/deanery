@@ -22,6 +22,7 @@ Please choose what you would like to do:
     <li><a href="edition">Profile edition</a></li>
     <li><a href="appplicatio">Applications</a></li>
     <li><a href="schedule">Schedule</a></li>
+    <li><a href="messaging">Send a message / reply to a message</a></li>
 
 </ul>
 

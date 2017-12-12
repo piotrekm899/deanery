@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: piotr
@@ -9,6 +10,11 @@
 <html>
 <head>
     <title>Homepage</title>
+
+    <style>
+        .errors {color: red}
+    </style>
+
 </head>
 <body>
 
@@ -18,13 +24,19 @@ Welcome to the virtual deanery!!!
 Please log in as Student or Teacher to continue:
 <br><br>
 
-<form action="loggedin" method="post">
+<form:form action="loggedin" modelAttribute="cred">
 
-    <input type="text" name="login" placeholder="What's your login?"/><br>
-    <input type="password" name="password" placeholder="What's your password?"/><br>
-    <input type="submit" />
+    Username: <form:input path="username"/>
+    <form:errors path="username" cssClass="errors"/>
     <br><br>
-    <p><font color="red">${errormsg}</font></p>
+
+    Password: <form:password path="password"/>
+    <form:errors path="password" cssClass="errors"/>
+    <br><br>
+
+    <input type="submit" value="submit">
+
+</form:form>
 
 <%--LOGIN FORM--%>
 

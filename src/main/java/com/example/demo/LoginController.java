@@ -15,18 +15,18 @@ import javax.validation.Valid;
 @Controller
 public class LoginController {
 
-    @RequestMapping(value = "/loggedin", method = RequestMethod.POST)
-    public String loginPage(@RequestParam String login,
-                            ModelMap model) {
+    @RequestMapping(value = "/loggedin")
+    public String loginPage(@Valid @ModelAttribute("cred") Credentials credentials, BindingResult theBindingResult){
 
-        if (login.startsWith("T")) {
-            return "menuTeacher";
-        } else if(login.startsWith("S")) {
-            return "menuStudent";
-        } else {
-            model.put("errormsg", "wrong password or username!");
+
+        System.out.println("|"+credentials.getPassword()+"|");
+
+        if (theBindingResult.hasErrors()) {
             return "homepage";
-        }
+        } else if (credentials.getUsername().startsWith("T")) {
+            return "menuTeacher";
+        } else
+            return "menuStudent";
     }
 
 }

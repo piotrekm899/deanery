@@ -24,6 +24,7 @@ Welcome to the virtual deanery!!!
 Please log in as Student or Teacher to continue:
 <br><br>
 
+<%--@elvariable id="cred" type="com.example.demo.Credentials"--%>
 <form:form action="loggedin" modelAttribute="cred">
 
     Username: <form:input path="username"/>

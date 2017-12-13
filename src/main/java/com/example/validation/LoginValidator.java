@@ -20,12 +20,13 @@ public class LoginValidator implements ConstraintValidator<Username,String> {
 
         boolean result;
 
-        if(s.startsWith(usernameS) || s.startsWith(usernameT)) {
-            result = true;
-        } else  {
-            result = false;
-        }
+        if(s!=null){
+            if(s.startsWith(usernameS) || s.startsWith(usernameT)) {
+                result = true;
+            } else result=false;
+        } else result = true;
 
         return result;
+
     }
 }

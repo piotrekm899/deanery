@@ -12,5 +12,18 @@
 </head>
 <body>
 
+Please choose what you would like to do:
+
+<ul>
+
+    <li><a href="payments">Payment service</a></li>
+    <li><a href="information">Information</a></li>
+    <li><a href="grades">Grading</a></li>
+    <li><a href="appplications">Applications review</a></li>
+    <li><a href="messaging">messaging</a></li>
+
+</ul>
+
+
 </body>
 </html>

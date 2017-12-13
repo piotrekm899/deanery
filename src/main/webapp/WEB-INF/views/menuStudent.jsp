@@ -8,10 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Menu</title>
+    <title>Menu Student</title>
 </head>
-<body>
 
+<body>
 Please choose what you would like to do:
 
 <ul>
@@ -20,8 +20,9 @@ Please choose what you would like to do:
     <li><a href="enrollment">Classes enrollment</a></li>
     <li><a href="grades">Grades</a></li>
     <li><a href="edition">Profile edition</a></li>
-    <li><a href="appplicatio">Applications</a></li>
+    <li><a href="appplication">Applications</a></li>
     <li><a href="schedule">Schedule</a></li>
+    <li><a href="messaging">messaging</a></li>
 
 </ul>
 

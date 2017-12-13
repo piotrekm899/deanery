@@ -25,12 +25,4 @@ public class HomeController {
             return "homepage";
         }
 
-    @InitBinder/* Converts empty strings into null when a form is submitted */
-    public void initBinder(WebDataBinder binder) {
-
-        StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
-        binder.registerCustomEditor(String.class, stringTrimmerEditor);
-
-    }
-
 }
